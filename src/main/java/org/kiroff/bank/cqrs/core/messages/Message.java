@@ -1,13 +1,14 @@
-package org.kiroff.bank.sqrs.core.messages;
+package org.kiroff.bank.cqrs.core.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public abstract class Message
-{
+@SuperBuilder
+public abstract class Message {
     private String id;
 }

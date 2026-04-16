@@ -1,4 +1,6 @@
 package org.kiroff.bank.cqrs.core.commands;
 
-public class CommandHandlerMethod {
+@FunctionalInterface
+public interface CommandHandlerMethod<T extends BaseCommand> {
+    void handle(T command);
 }

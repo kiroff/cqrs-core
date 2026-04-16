@@ -1,5 +1,4 @@
 package org.kiroff.bank.cqrs.core.excpetions;
 
-public class ConcurrencyException
-{
+public class ConcurrencyException extends RuntimeException {
 }

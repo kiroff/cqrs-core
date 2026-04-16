@@ -1,15 +1,13 @@
-package org.kiroff.bank.sqrs.core.commands;
+package org.kiroff.bank.cqrs.core.commands;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.kiroff.bank.sqrs.core.messages.Message;
+import org.kiroff.bank.cqrs.core.messages.Message;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public abstract class BaseCommand extends Message
-{
-    public BaseCommand(String id)
-    {
-        super(id);
-    }
+@AllArgsConstructor
+public abstract class BaseCommand extends Message {
+
 }
